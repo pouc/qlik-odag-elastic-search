@@ -191,31 +191,4 @@ app.get('/createSenseApp', function (req, res) {
 
 app.use(express.static(__dirname + '/public'));
 
-
-
-/*
-var oauth = new OAuth.OAuth(
-  'https://api.twitter.com/oauth/request_token',
-  'https://api.twitter.com/oauth/access_token',
-  'SF1oW9OE4QaWSWyVuZiy99LP8',
-  'haDA6JoaD3RTqfkg9t4iGLbWXn8TBYjRkTwN8qaIBN1tOvfJzv',
-  '1.0A',
-  null,
-  'HMAC-SHA1'
-);
-
-app.get('/getProfile', function (req, res) {
-	oauth.get(
-		'https://api.twitter.com/1.1/users/show.json?screen_name=' + req.query.id,
-		'107412776-xlZyZwekmalkVyGptNwwW0TArXW6vHvKxp4Xmbz5', 
-		'jBo2xU3dOOFaKYnPjvo4wJfsmlgrWSdhddMzL83Cb9SPf', 
-
-		function (e, data, result){
-			if (e) console.error(e);    
-			res.send(data);			
-		}
-	);  
-});
-*/
-
 app.listen(process.env.PORT || 3000);
